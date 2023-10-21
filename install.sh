@@ -8,8 +8,8 @@ if ! type "aescrypt" &>/dev/null; then
     cd aescrypt-3.16
     make &&
     sudo make install &&
-    cd ~/Downloads
-    shred -uzv aescrypt-3.16.tgz
+    shred -uzv ~/Downloads/aescrypt-3.16.tgz
+    cd ~
     echo "Aescrypt was installed."
 else
     echo "Aescrypt is already installed on your system."
