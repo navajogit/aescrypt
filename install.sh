@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 if ! type "aescrypt" &>/dev/null; then
     echo "Aescrypt is not installed. Installing..."
     cd $HOME/Downloads
