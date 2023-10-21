@@ -1,5 +1,6 @@
 #!/bin/bash
 if ! type "aescrypt" &>/dev/null; then
+    clear
     echo "Aescrypt is not installed. Installing..."
     cd ~/Downloads
     wget https://github.com/navajogit/aescrypt/raw/main/aescrypt-3.16.tgz &&
@@ -12,5 +13,6 @@ if ! type "aescrypt" &>/dev/null; then
     cd ~
     echo "Aescrypt was installed."
 else
+    clear
     echo "Aescrypt is already installed on your system."
 fi
