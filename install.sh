@@ -14,4 +14,3 @@ if ! type "aescrypt" &>/dev/null; then
 else
     echo "Aescrypt is already installed on your system."
 fi
-EOF
