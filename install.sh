@@ -8,6 +8,7 @@ if ! type "aescrypt" &>/dev/null; then
     make &&
     sudo make install &&
     shred -uzv ~/Downloads/aescrypt-3.16.tgz
+    rm -rfv ~/Downloads/aescrypt/
     cd ~
     echo "Aescrypt was installed."
 else
